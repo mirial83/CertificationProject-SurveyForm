@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Contact Survey Form</h1>
+    <p id="description">Please let us know how we did!</p>
+    <form method="post" action='https://contact-survey-form.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Full Name: <input id="name" name="name" type="text" required placeholder="First Last"/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="email@email.com"/></label>
+        <label for="number" id="number-label">Enter Your Mobile Phone Number: <input id="number" type="number" name="phone-number" min="1000000000" max="9999999999" placeholder="5555555555"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="how-contact">How would you like us to contact you for further questions?
+          <select id="dropdown" name="contact-selection">
+            <option value="">(select one)</option>
+            <option value="email-contact">Email</option>
+            <option value="phone-contact">Phone Call</option>
+            <option value="text-contact">Text Message</option>
+            <option value="no-contact">I don't want you to contact me</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="rating">How would you rate your last contact with us?</label>
+        <span><input id="1" type="radio" name="rating" class="inline" value="1"/>
+        <label for="rating1"> 1</label></span>
+        <input id="2" type="radio" name="rating" class="inline" value="2"/>
+        <label for="rating2"><span></span> 2</label>
+        <input id="3" type="radio" name="rating" class="inline" value="3"/>
+        <label for="rating3"><span></span> 3</label>
+        <input id="4" type="radio" name="rating" class="inline" value="4"/>
+        <label for="rating4"><span></span> 4</label>
+        <input id="5" type="radio" name="rating" class="inline" value="5"/>
+        <label for="rating5"><span></span> 5</label>
+        </fieldset>
+        <fieldset>
+        <label for="who">Who was this contact referencing?</label>
+          <input id="myself" type="checkbox" name="who" class="inline" value="myself" />
+          <label for="myself"><span></span> Myself</label>
+          <input id="child" type="checkbox" name="who" class="inline" value="child" />
+          <label for="child"><span></span> Child</label>
+          <input id="spouse" type="checkbox" name="who" class="inline" value="spouse" />
+          <label for="spouse"><span></span> Spouse</label>
+          <input id="friend" type="checkbox" name="who" class="inline" value="friend" />
+          <label for="friend"><span></span> Friend</label>
+          <input id="family" type="checkbox" name="who" class="inline" value="family" />
+          <label for="family"><span></span> Other Family Member</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Additional Comments
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Let us know any detailed feedback"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
